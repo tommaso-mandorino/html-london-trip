@@ -18,7 +18,7 @@
       <h1>Il mio Viaggio a Londra</h1>
 
       <!-- Photo collage -->
-      <section>
+      <div>
         <img
           src="img/pexels-bill-emrich-230794-0.jpg"
           alt="Foto Londra parte 1"
@@ -31,7 +31,7 @@
           src="img/pexels-bill-emrich-230794-2.jpg"
           alt="Foto Londra parte 3"
         />
-      </section>
+      </div>
 
       <hr />
     </header>
@@ -44,9 +44,11 @@
         <!-- Expenses summary table -->
         <table>
           <thead>
-            <th>Numero</th>
-            <th>Descrizione</th>
-            <th>Conto</th>
+            <tr>
+              <th>Numero</th>
+              <th>Descrizione</th>
+              <th>Conto</th>
+            </tr>
           </thead>
           <tbody>
             <tr>
@@ -140,7 +142,7 @@
         <h3>Le foto</h3>
 
         <!-- Photo gallery -->
-        <section>
+        <div>
           <img
             src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg"
             alt="Millennium Bridge"
@@ -149,8 +151,12 @@
             src="https://imgc.allpostersimages.com/img/posters/evening-tower-bridge-and-river-thames-london_u-L-P2QVZJ0.jpg?artPerspective=n"
             alt="Tower Bridge"
           />
-        </section>
+        </div>
       </section>
     </main>
   </body>
 </html>
+<!--
+    Prettier aggiunge "/" ai tag senza chiusura come <img>, generando nel validatore il messaggio informativo:
+    "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values."
+ -->
