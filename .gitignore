@@ -138,8 +138,3 @@ dist
 .pnp.*
 
 # Node .gitignore template end
-
-##################################################
-
-# Ignoring mockup image
-mockup.jpg
